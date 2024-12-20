@@ -8,21 +8,21 @@ let package = Package(
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "AdsEngine",
-            targets: ["AdsEngine"]),
+            name: "DemirorenAdsEngine",
+            targets: ["DemirorenAdsEngine"]),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
             name: "GoogleMobileAds",
-            path: "./GoogleMobileAds.xcframework"
+            path: "./Frameworks/GoogleMobileAds.xcframework"
         ),
         .binaryTarget(
             name: "UserMessagingPlatform",
-            path: "./UserMessagingPlatform.xcframework"
+            path: "./Frameworks/UserMessagingPlatform.xcframework"
         ),
         .target(
-            name: "AdsEngine",
+            name: "DemirorenAdsEngine",
             dependencies: [
                 .target(name: "GoogleMobileAds"),
                 .target(name: "UserMessagingPlatform"),
