@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "AdsEngine",
+    name: "DemirorenAdsEngine",
     platforms: [.iOS(.v15)],
     products: [
         .library(
