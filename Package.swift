@@ -14,18 +14,18 @@ let package = Package(
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "GoogleMobileAds",
-            path: "./Frameworks/GoogleMobileAds.xcframework"
+            name: "GMobileAds",
+            path: "./Frameworks/GMobileAds.xcframework"
         ),
         .binaryTarget(
-            name: "UserMessagingPlatform",
-            path: "./Frameworks/UserMessagingPlatform.xcframework"
+            name: "GUserMessagingPlatform",
+            path: "./Frameworks/GUserMessagingPlatform.xcframework"
         ),
         .target(
             name: "DemirorenAdsEngine",
             dependencies: [
-                .target(name: "GoogleMobileAds"),
-                .target(name: "UserMessagingPlatform"),
+                .target(name: "GMobileAds"),
+                .target(name: "GUserMessagingPlatform"),
             ])
     ]
 )
